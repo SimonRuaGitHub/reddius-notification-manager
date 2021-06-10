@@ -7,3 +7,14 @@ spring:
     queue: email_sender
     exchange: reddius_notification
     routingkey: reddius_email
+  mail:
+    host: smtp.mailtrap.io
+    port: 25
+    username: 90568a7b763eff
+    password: a356aae2fd0cef
+    protocol: smtp
+    tsl: yes
+    ssl: no
+service:
+  mail:
+   sender: springreddit@gmail.com
