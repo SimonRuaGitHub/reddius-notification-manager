@@ -26,6 +26,6 @@ public class RabbitMQReceiver implements RabbitListenerConfigurer{
     @RabbitListener(queues = "${spring.rabbitmq.queue}")
     public void receivedMsg(Email email){
         System.out.println("Received message: "+email.toString());
-       // mailService.sendMail(email);
+        mailService.sendMail(email);
     }
 }
