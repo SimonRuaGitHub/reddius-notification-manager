@@ -9,7 +9,7 @@ spring:
     routingkey: reddius_email
   mail:
     host: smtp.mailtrap.io
-    port: 25
+    port: 587
     username: 90568a7b763eff
     password: a356aae2fd0cef
     protocol: smtp
